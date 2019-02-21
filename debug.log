@@ -1,0 +1,5 @@
+[0219/172254.354:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: La operación se completó correctamente. (0x0)
+[0219/173858.565:ERROR:process_info.cc(329)] VirtualQueryEx: Acceso denegado. (0x5)
+[0219/173858.565:ERROR:process_info.cc(550)] ReadMemoryInfo failed
+[0219/173858.565:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0219/173858.565:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose. (0xc000010a)
