@@ -29,10 +29,35 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Home</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">             
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#projects">Projects</a>
+            </li>
+            
+          </ul>
+           
+             
+            <div class="col-md-8 text-md-right inline my-2 my-lg-0 header-buttons">
+                        
+                <a href="img/resume.pdf" download="astridsresume" class="site-btn">Download CV</a>
+
+            </div>
+           
+        </div>
+    </nav>
 
     <div class="home-four-style">
         <!-- Header section start -->
-        <header class="header-section ">
+        <header class="header-section p-0">
             <div class="container-fluid">
                 <div class="row">
                     
@@ -47,31 +72,31 @@
         <!-- Header section end -->
 
         <div class="container-fluid p-0">
-            <div class="row m-0">
-                <div class="col-xl-5 col-lg-5 p-0">
+            <div class="row ">
+                <div class="col-sm-6 col-md-6 col-xl-6 col-lg-7">
                     <div class="main-left-area h-100">
                         <!-- hero section -->
                         <section class="intro-section">
                             <figure class="hero-image">
                                 <img src="img/icon/cursor2.0.png" alt="">
                             </figure>
-                            <div class="hero-text">
-                                <h2>Astrid <br>Gamoneda</h2>
-                                <p>I’m a software engineer in love with traveling, art and having adventures.</p>
+                            <div class="hero-text ">
+                                <h2  style="font-size:5vw;"> Astrid Gamoneda</h2>
+                                <p style="font-size:4vw;">I’m a software engineer in love with traveling, art and having adventures.</p>
                             </div>
                            
                         </section>
                         <!-- extra section -->
-                        <section class="extra-section spad">
+                        <section class=" extra-section spad">
                              <div class="row">
                                 <section class="language-section spad">
                                     <div class="section-title">
                                         <h2>Relevant projects </h2>
                                     </div>
-                                    <ul class="resume-list">
+                                    <ul class="resume-list" id="projects">
                                         <li>
                                             <h3>K-nearest Neighbour</h3>
-                                            <p>An Implementation of the knn machine learning algorithm in python to be
+                                            <p class=text-center> An Implementation of the knn machine learning algorithm in python to be
                                                 executed with pyspark. Working with two dataset (the NASDAQ stock and Breast Cancer Winconsin dataset). 
                                             This was a group project.<br> Available here:
                                             <a href="https://github.com/astrd/knn-pyspark"><i class="fa fa-github"></i></a>
@@ -79,7 +104,7 @@
                                         </li>
                                         <li>
                                             <h3>Foon Robotics Project</h3>
-                                            <p>The aim of this project is to structure knowledge
+                                            <p class=text-center>The aim of this project is to structure knowledge
                                                     representation for robot learning and manipulation using directed
                                                     graph with object and motions where the edges denote a
                                                     sequencing of actions called foon (Functional Object-Oriented
@@ -89,7 +114,7 @@
                                         </li>
                                         <li>
                                                 <h3>Web App Grading <br> Restaurant Websites</h3>
-                                                <p>This is a group project developed in javascript and clojure with the aim of grading different restaurants applications.
+                                                <p class=text-center> This is a group project developed in javascript and clojure with the aim of grading different restaurants applications.
                                                     An admin will be able to submit a zip file with these websites. The rest of the users can be able to vote which restaurant website 
                                                     .<br> Available here:
                                                         <a href="https://github.com/astrd/Robotics/tree/master/FOON"><i class="fa fa-github"></i></a>
@@ -104,9 +129,9 @@
                                         <ul class="resume-list">
                                             <li>
                                                 <h3>A decentralised chat: Dechat</h3>
-                                                <p>An ongoing team project building a decentralised chat using the solid framework.
+                                                <p class=text-center>An ongoing team project building a decentralised chat using the solid framework.
                                                     <br> Available here:
-                                                <a href="https://github.com/Arquisoft/dechat_en2b"><i class="fa fa-github"></i></a>
+                                                <a href="https://github.com/Arquisoft/sole_chat"><i class="fa fa-github"></i></a>
                                             </p>
                                             </li>
                                             
@@ -140,26 +165,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-7">
+                <div class="col-sm-6 col-md-6 col-xl-5 col-lg-5 p-0">
                     <div class="main-right-area">
                         <!-- Resume section start -->
                         <section class="resume-section">
                             <div class="section-title">
                                 <h2>Education</h2>
                             </div>
-                            <ul class="resume-list">
+                            <ul class="resume-list" id = "education">
                                 <li>
                                     <h2>2016-Present</h2>
                                     <h3>Software Engineering Bachelor's Degree </h3>
                                     <h4>University Of Oviedo</h4>
-                                    <p>A 4 year bachelor's degreen on computer science specialising in software engineering in Oviedo, Spain.
+                                    <p class=text-center>A 4 year bachelor's degreen on computer science specialising in software engineering in Oviedo, Spain.
                                       <br>  Graduation on June 2020 planned.</p>
                                 </li>
                                 <li>
                                     <h2>Fall 2018</h2>
                                     <h3>Exchange</h3>
                                     <h4>University of South Florida</h4>
-                                    <p>Participated in an exchange program between the University of South Florida and the University of Oviedo.
+                                    <p class=text-center>Participated in an exchange program between the University of South Florida and the University of Oviedo.
                                         A stay of 4 months in the semester of fall 2018 in the United States Of America taking classes majoring in computer science.</p>
                                 </li>
                             </ul>
@@ -171,11 +196,11 @@
                         <section class="review-section spad">
                             <div class="section-title">
                                 <h2>Relevant Coursework</h2>
-                                <p>Data Structure, Computer Architecture, Programming Paradigms,
+                                <p class=text-center> Data Structure, Computer Architecture, Programming Paradigms,
                                      Operating Systems, Data Bases, Algorithms, Numerical Computation,
                                       Human Computer Interaction, Web Application Development, Big Data, Intro to Robotics,
                                        Distributed Systems, Secure Systems, Networks and Systems Administration
-                                       Programming Launguage Design and Software Architecture.</p>
+                                       Programming Language Design and Software Architecture.</p>
                             </div>
                             
                         </section>
@@ -193,6 +218,10 @@
                                 <div class="single-progress-item">
                                     <div class="progress-bar-style" data-progress="75"></div>
                                     <p>C#</p>
+                                </div>
+                                <div class="single-progress-item">
+                                    <div class="progress-bar-style" data-progress="75"></div>
+                                    <p>Javascript</p>
                                 </div>
                                 <div class="single-progress-item">
                                     <div class="progress-bar-style" data-progress="87"></div>
@@ -239,8 +268,8 @@
                                         <p>Sql Database</p>
                                     </div>
                                     <div class="single-progress-item">
-                                        <div class="progress-bar-style" data-progress="60"></div>
-                                        <p>Relational Database</p>
+                                        <div class="progress-bar-style" data-progress="85"></div>
+                                        <p>MongoDB</p>
                                     </div>                                   
                                 </div>
                             </div>
@@ -287,9 +316,21 @@
                                         <p>ANTLR </p>
                                     </div> 
                                     <div class="single-progress-item">
-                                        <div class="progress-bar-style" data-progress="10"></div>
+                                        <div class="progress-bar-style" data-progress="80"></div>
                                         <p><br>Angular.js </p>
-                                    </div>                                        
+                                    </div>
+                                    <div class="single-progress-item">
+                                        <div class="progress-bar-style" data-progress="50"></div>
+                                        <p><br>Travis</p>
+                                    </div>
+                                    <div class="single-progress-item">
+                                        <div class="progress-bar-style" data-progress="60"></div>
+                                        <p><br>REST </p>
+                                    </div>   
+                                    <div class="single-progress-item">
+                                        <div class="progress-bar-style" data-progress="73"></div>
+                                        <p><br>Ajax </p>
+                                    </div>                                      
                                 </div>
                             </div>
                             
