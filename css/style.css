@@ -12,6 +12,7 @@ html,
 body {
 	height: 100%;
 	font-family: 'Josefin Sans', sans-serif;
+	margin:0px auto !important;
 }
 
 h1,
@@ -20,22 +21,32 @@ h3,
 h4,
 h5,
 h6 {
-	color: #40424a;
+	color: white !important;
 	margin: 0;
 	font-weight: 600;
 	font-family: 'Josefin Sans', sans-serif;
+	text-align: center !important;
+	padding-top: 0.1em;
+}
+p,
+span {
+	color: white !important;
+	margin: 0;
+	font-weight: 600;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: justify;
 }
 
-h2 {
-	font-size: 48px;
-}
 
-h3 {
-	font-size: 30px;
-}
+h2::after{
+	background: white !important;
 
+}
+.fa{
+ margin: 0em 0.5em !important;
+ font-size: 2em !important;
+}
 p {
-	font-size: 18px;
 	color: #808181;
 	line-height: 1.8;
 }
@@ -63,6 +74,15 @@ ol {
 	margin: 0;
 }
 
+.experience{
+	background-image: linear-gradient(rgb(255, 15, 60) 0%,rgb(72, 19, 64) 100%);
+}
+.bar-inner{
+	background: white !important;
+}
+.project-list{
+padding: 1% 15% !important;
+}
 /*---------------------
 	Helper CSS
 -----------------------*/
@@ -72,13 +92,20 @@ ol {
 }
 
 .section-title h2 {
-	display: inline-block;
 	position: relative;
-	margin-bottom: 110px;
-	padding-bottom: 2px;
+	margin: auto;
+	padding: 0.1em 0.25em;
 	line-height: normal;
 }
-
+a{
+	color: palevioletred;
+}
+p{
+	padding: 1em 2.5em;
+}
+.resume-section{
+	padding-top:1em;
+}
 .section-title h2:after {
 	position: absolute;
 	content: '';
@@ -271,7 +298,7 @@ ol {
 
 /* Porgess bar */
 .single-progress-item {
-	margin-bottom: 35px;
+	margin: auto;
 	position: relative;
 }
 
@@ -520,9 +547,11 @@ ol {
 	left: -118px;
 }
 
-.resume-list h2 {
-	font-size: 72px;
-	margin-bottom: 10px;
+h2 {
+	font-size: 8vw;
+}
+ h1 {
+	font-size: 10vw;
 }
 
 .resume-list h4 {
@@ -810,13 +839,12 @@ ol {
 
 .home-three-style .main-left-area .section-title h2,
 .home-four-style .main-left-area .section-title h2 {
-	margin-bottom: 130px;
+	margin-bottom: 1.5em;
 }
 
 .home-three-style .main-right-area,
 .home-four-style .main-right-area {
-	padding-top: 200px;
-	padding-left: 110px;
+	padding: 5em 3em;
 }
 
 .home-three-style .resume-list li,
